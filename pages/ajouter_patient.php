@@ -78,18 +78,12 @@ if(isset($_REQUEST['btn_insert']))
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <?php include 'style_page.php'?>
 </head>
 <body>
 <?php include 'menu_page.php'?>  
-	
-	
-	
-	
+		
 	<div class="wrapper">
 	
 	<div class="container">
@@ -113,8 +107,8 @@ if(isset($_REQUEST['btn_insert']))
         <?php
 		}
 		?>   
-			<center><h2>Inserez article</h2></center>
-	<center><form method="post" class="form-horizontal" style="justify-content-centrer">
+			<h2>Enregistrer un patient</h2>
+              <form method="post" class="form-horizontal" style="justify-content-centrer">
 					       
 				<div class="col-sm-6 mb-3">
 				<input type="text" name="nom" class="form-control" placeholder="Nom" />
@@ -167,9 +161,7 @@ if(isset($_REQUEST['btn_insert']))
 				
 				<div class="col-sm-offset-3 col-sm-9 m-t-15">
 					<!-- Button trigger modal -->
-<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-Insérer
-</button>
+<button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Enregistrer</button>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -180,25 +172,23 @@ Insérer
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Voulez-vous vraiment inserez un article?
+        Voulez-vous vraiment vous enregistrer?
       </div>
       <div class="modal-footer">
-	   <button  class="btn btn-success" type="submit"  name="btn_insert" class="btn btn-danger " value="Insérer" >Valider</button>
+	   <button  class="btn btn-success" type="submit"  name="btn_insert" class="btn btn-danger" value="Insérer" >Valider</button>
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button> 
       </div>
     </div>
   </div>
 </div>
-		<a href="liste_patient.php" class="btn btn-dark">Supprimer</a>
-		</div>
-			</form>
+ <a href="liste_patient.php" class="btn btn-outline-primary">Supprimer</a>
+</div>
+</form>
 			
-		</div>
-		
-	</div>
-			
-	</div>
-	<br>
+</div>		
+</div>			
+</div>
+<br>
       <?php include 'footer.php'?>
       <?php include 'js.php'?>									
 	</body>
