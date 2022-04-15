@@ -44,4 +44,4 @@
 <?php include 'pages/footer.php'?>
 <?php include 'pages/js.php'?>
 </body>
-</html>
+</html> 
