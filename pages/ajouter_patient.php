@@ -161,7 +161,7 @@ if(isset($_REQUEST['btn_insert']))
 				
 				<div class="col-sm-offset-3 col-sm-9 m-t-15">
 					<!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Enregistrer</button>
+<button  onclick='return confirm("Etes-vous sûr?")' type="submit" name="btn_insert" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Enregistrer</button>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

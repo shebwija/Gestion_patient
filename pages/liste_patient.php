@@ -43,12 +43,12 @@ if(isset($_REQUEST['delete_id']))
                    
                         <div class="panel-body imprimable">
                             <div class="table-responsive">
-                                <table id="myTable" class="table table-striped table-bordered table-hover">
-                                    <thead>
+                                <table id="myTable" class="table table-striped table-bordered table-hover ">
+                                    <thead class="bg-warning">
                                         <tr>
                                             <th>ID</th>
                                             <th>NOM</th>
-											<th>PRENOM</th>
+										                      	<th>PRENOM</th>
                                             <th>SEXE</th>
                                             <th>AGE</th>
                                             <th>TELEPHONE</th>
@@ -56,6 +56,7 @@ if(isset($_REQUEST['delete_id']))
                                             <th>GROUPE SANGUIN</th>
                                             <th>MALADIE ACTUELLE</th>
                                             <th>ANTECEDENT MEDICAL</th>
+                                            <th>DETAIL</th>
                                             <th>MODIFIER</th>
                                             <th>SUPPRIMER</th>
                                         </tr>
@@ -79,7 +80,8 @@ if(isset($_REQUEST['delete_id']))
                                             <td><?php echo $row['maladie']; ?></td>
                                             <td><?php echo $row['antecedent']; ?></td>
                                             <td><a href="modifier.php?update_id=<?php echo $row['idpatient']; ?>" class="btn "> <img src="../image/edit.jpg"  alt=""> </a></td>
-                                            <td><a href="?delete_id=<?php echo $row['idpatient']; ?>" class="btn " onclick='return confirm("Etes-vous sûr de vouloir supprimer?")'>  <img src="../image/Close.jpg"  alt=""> </a></td>
+                                            <td><a href="modifier.php?update_id=<?php echo $row['idpatient']; ?>" class="btn "> <img src="../image/edit.jpg"  alt=""> </a></td>
+                                            <td><a href="supprimer.php?id=<?php echo $row['idpatient']; ?>" class="btn " onclick='return confirm("Etes-vous sûr de vouloir supprimer?")'>  <img src="../image/Close.jpg"  alt=""> </a></td>
                                         </tr>
                                     <?php
 									}
