@@ -5,8 +5,4 @@
       <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
       <script src="bootstrap-5.1.3-dist/js/popper.min.js"></script>
       
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.esm.js"></script>
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.esm.min.js"></script>
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+   

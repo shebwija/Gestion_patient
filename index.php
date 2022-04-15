@@ -37,12 +37,7 @@
 </div>
 </div>
 <div class="col md-5" style="background-color:yellow;"> <br><br><br>
-<<<<<<< HEAD
-    <h1 class="text-center " style="font-family: 'Lucida Calligraphy;font-size:2em;">Soyez la bienvenue à la gestion des patients<br> Hospitalité_Bien-être_Santé </h1>
-    
-=======
-    <h1 class="text-center" style="font-family: 'Lucida Calligraphy; font-size: 50px;">Soyez la bienvenue à la gestion des patients<br> DELBENIE <br> Hospitalité_Bien-être_Santé </h1>
->>>>>>> d3a25b18047bafabb329b70aee30e228190942b6
+  <h1 class="text-center " style="font-family: 'Lucida Calligraphy;font-size:2em;">Soyez la bienvenue à la gestion des patients<br> Hospitalité_Bien-être_Santé </h1>
 </div>
 </div>
 <br>

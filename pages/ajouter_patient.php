@@ -82,7 +82,7 @@ if(isset($_REQUEST['btn_insert']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php include 'style.php'?>
+    <?php include 'style_page.php'?>
 </head>
 <body>
 <?php include 'menu_page.php'?>  
