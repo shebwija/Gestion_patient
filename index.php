@@ -37,7 +37,7 @@
 </div>
 </div>
 <div class="col md-5" style="background-color:yellow;"> <br><br><br>
-  <h1 class="text-center " style="font-family: 'Lucida Calligraphy;font-size:2em;">Soyez la bienvenue à la gestion des patients<br> Hospitalité_Bien-être_Santé </h1>
+  <h1 class="text-center " style="font-family: 'Lucida Calligraphy;font-size:2em;">Bienvenue à la gestion des patients<br> Hospitalité_Bien-être_Santé </h1>
 </div>
 </div>
 <br>
