@@ -6,7 +6,8 @@ if(isset($_REQUEST['update_id']))
 {
 	try
 	{
-		$code = $_REQUEST['update_id']; //obtenir la mise à jour de la liste_patient à travers "$id" variable
+		//obtenir la mise à jour de la liste_article à travers "$id" variable
+		$code = $_REQUEST['update_id']; 
 		$select_stmt = $db->prepare('SELECT * FROM Patient WHERE idpatient =:idpatient');
 		$select_stmt->bindParam(':idpatient',$idpatient);
 		$select_stmt->execute(); 
@@ -75,6 +76,7 @@ if(isset($_REQUEST['btn_update']))
 				$update_stmt->bindParam(':adresse',$adresse);
 				$update_stmt->bindParam(':groupeSanguin',$groupeSanguin);
 				$update_stmt->bindParam(':maladie',$maladie);
+				$update_stmt->bindParam(':antecedent',$antecedent);
 				$update_stmt->bindParam(':idpatient',$idpatient);
 				 
 				if($update_stmt->execute())
@@ -127,21 +129,30 @@ if(isset($_REQUEST['btn_update']))
 		}
 		?>   
 			<center><h2>Modifier</h2></center>
-			<center><form method="post" class="form-horizontal">
-					
+			<form method="post" class="form-horizontal">
+
+			<div class="form-row">
+			  <div class="col">
+
 				<div class="form-group mb-3">
 				<label class="col-sm-3 control-label" style=" text-align: left;" >NOM</label>
 				<div class="col-sm-6">
 				<input type="text" name="nom" class="form-control" value="<?php echo $nom; ?>">
 				</div>
 				</div>
-					
+				</div>
+
+				<div class="col">
 				<div class="form-group mb-3" >
 				<label class="col-sm-3 control-label" style=" text-align: left;">PRENOM</label>
 				<div class="col-sm-6">
 				<input type="text" name="prenom" class="form-control" value="<?php echo $prenom; ?>">
 				</div>
 				</div>
+				</div>
+
+			  </div>
+			</div>
 
 				<div class="form-group mb-3">
 				<label class="col-sm-3 control-label" style=" text-align: left;">SEXE</label>

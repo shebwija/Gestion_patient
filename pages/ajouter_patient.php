@@ -109,15 +109,23 @@ if(isset($_REQUEST['btn_insert']))
 		?>   
 			<h2>Enregistrer un patient</h2>
               <form method="post" class="form-horizontal" style="justify-content-centrer">
-					       
+				
+			<div class="col md-12 d-flex">
+			  <div class="col md-6">
 				<div class="col-sm-6 mb-3">
 				<input type="text" name="nom" class="form-control" placeholder="Nom" />
 				</div>
+				</div>
 
+				<div class="col md-6">
 				<div class="col-sm-6 mb-3">
 				<input type="text" name="prenom" class="form-control" placeholder="Prénom" />
 				</div>
+			  </div>
+			</div>
 
+			<div class="col md-12 d-flex">
+			  <div class="col md-6">   
 				<div class="col-sm-6 mb-3">
 				<select class="form-select"  aria-label="Default select example" name="sexe">
                 <option selected > Sexe </option>
@@ -125,18 +133,32 @@ if(isset($_REQUEST['btn_insert']))
                 <option value="Feminin">Feminin</option>
                 </select>
 				</div>
+				</div>
+
+				<div class="col md-6">
 
 				<div class="col-sm-6 mb-3">
 				<input type="number" name="age" class="form-control" placeholder="Age" />
 				</div>
+				</div>
+			</div>
+
+			<div class="col md-12 d-flex">
+			  <div class="col md-6">     
 				<div class="col-sm-6 mb-3">
 				<input type="number" name="telephone" class="form-control" placeholder="Téléphone" />
 				</div>
+				</div>
 
+				<div class="col md-6">
 				<div class="col-sm-6 mb-3">
 				<input type="text" name="adresse" class="form-control" placeholder="Adresse" />
 				</div>
+				</div>
+			</div>
 
+			<div class="col md-12 d-flex">
+			  <div class="col md-6">
 				<div class="col-sm-6 mb-3">
 				<select class="form-select"  aria-label="Default select example" name="groupeSanguin">
                 <option selected > Groupe sanguin </option>
@@ -150,10 +172,14 @@ if(isset($_REQUEST['btn_insert']))
                 <option value="O-">0-</option>
                 </select>
 				</div>
+				</div>
 
+				<div class="col md-6">
 				<div class="col-sm-6 mb-3">
 				<input type="text" name="maladie" class="form-control" placeholder="Maladie actuelle" />
 				</div>
+				</div>
+			</div>
 
 				<div class="col-sm-6 mb-3">
 				<input type="text" name="antecedent" class="form-control" placeholder="Antécédent médical" />
