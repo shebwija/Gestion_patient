@@ -32,7 +32,7 @@ if(isset($_REQUEST['delete_id']))
 </head>
 <body>
 <?php include 'menu_page.php';?>  
-      <h1 style="font-family: Algerian; text-align: center;">LISTE DES ARTICLES</h1>
+      <h1 style="font-family: Algerian; text-align: center;">LISTE DES PATIENTS</h1>
 	
 
 	
@@ -79,7 +79,7 @@ if(isset($_REQUEST['delete_id']))
                                             <td><?php echo $row['groupeSanguin']; ?></td>
                                             <td><?php echo $row['maladie']; ?></td>
                                             <td><?php echo $row['antecedent']; ?></td>
-                                            <td><a href="modifier.php?update_id=<?php echo $row['idpatient']; ?>" class="btn "> <img src="../image/edit.jpg"  alt=""> </a></td>
+                                            <td><a href="modifier.php?update_id=<?php echo $row['idpatient']; ?>" class="btn "> <img src="../image/user.jpg"  alt=""> </a></td>
                                             <td><a href="modifier.php?update_id=<?php echo $row['idpatient']; ?>" class="btn "> <img src="../image/edit.jpg"  alt=""> </a></td>
                                             <td><a href="supprimer.php?id=<?php echo $row['idpatient']; ?>" class="btn " onclick='return confirm("Etes-vous sûr de vouloir supprimer?")'>  <img src="../image/Close.jpg"  alt=""> </a></td>
                                         </tr>

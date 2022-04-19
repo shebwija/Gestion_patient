@@ -107,7 +107,7 @@ if(isset($_REQUEST['btn_insert']))
         <?php
 		}
 		?>   
-			<h2>Enregistrer un patient</h2>
+			<h2 class="text-center p-">Enregistrer un patient</h2> <br>
               <form method="post" class="form-horizontal" style="justify-content-centrer">
 				
 			<div class="col md-12 d-flex">

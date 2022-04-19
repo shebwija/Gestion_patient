@@ -6,8 +6,7 @@ if(isset($_REQUEST['update_id']))
 {
 	try
 	{
-		//obtenir la mise à jour de la liste_article à travers "$id" variable
-		$code = $_REQUEST['update_id']; 
+		$idpatient = $_REQUEST['update_id']; //obtenir la mise à jour de la liste_patient à travers "$id" variable
 		$select_stmt = $db->prepare('SELECT * FROM Patient WHERE idpatient =:idpatient');
 		$select_stmt->bindParam(':idpatient',$idpatient);
 		$select_stmt->execute(); 
@@ -50,7 +49,7 @@ if(isset($_REQUEST['btn_update']))
 		$errorMsg="Svp entrez le telephone";
 	}	
 	else if(empty($adresse)){
-		$errorMsg="Svp entrez l'adresse'";
+		$errorMsg="Svp entrez l'adresse";
 	}
 	else if(empty($groupeSanguin)){
 		$errorMsg="Svp entrez le groupe sanguin";
@@ -97,6 +96,9 @@ if(isset($_REQUEST['btn_update']))
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <?php include 'style_page.php';?>
 </head>
@@ -129,30 +131,21 @@ if(isset($_REQUEST['btn_update']))
 		}
 		?>   
 			<center><h2>Modifier</h2></center>
-			<form method="post" class="form-horizontal">
-
-			<div class="form-row">
-			  <div class="col">
-
+			<center><form method="post" class="form-horizontal">
+					
 				<div class="form-group mb-3">
 				<label class="col-sm-3 control-label" style=" text-align: left;" >NOM</label>
 				<div class="col-sm-6">
 				<input type="text" name="nom" class="form-control" value="<?php echo $nom; ?>">
 				</div>
 				</div>
-				</div>
-
-				<div class="col">
+					
 				<div class="form-group mb-3" >
 				<label class="col-sm-3 control-label" style=" text-align: left;">PRENOM</label>
 				<div class="col-sm-6">
 				<input type="text" name="prenom" class="form-control" value="<?php echo $prenom; ?>">
 				</div>
 				</div>
-				</div>
-
-			  </div>
-			</div>
 
 				<div class="form-group mb-3">
 				<label class="col-sm-3 control-label" style=" text-align: left;">SEXE</label>
@@ -220,29 +213,10 @@ if(isset($_REQUEST['btn_update']))
 				<div class="form-group">
 				<div class="col-sm-offset-3 col-sm-9 m-t-15">
 					<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-Mettre à jour
+<button type="submit"  name="btn_update" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick='return confirm("Etes-vous sûr de vouloir modifier?")'>
+Actualiser
 </button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-    
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Voulez vous vraiment modifier cette donnée?
-      </div>
-      <div class="modal-footer">
-	   <button  class="btn btn-success" type="submit"  name="btn_update" class="btn btn-danger " >Valider</button>
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button> 
-      </div>
-    </div>
-  </div>
-</div>
-		<a href="liste_patient.php" class="btn btn-danger">Supprimer</a>
+		<a href="liste_patient.php" class="btn btn-danger">Annuler</a>
 		</div>
 		</div>
 			</form>
