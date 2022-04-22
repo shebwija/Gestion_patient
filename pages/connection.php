@@ -2,7 +2,7 @@
 $db_host="localhost"; 
 $db_user="root";	
 $db_password="";	   
-$db_name="bd_patient";	
+$db_name="base_patient";	
 
 try
 {

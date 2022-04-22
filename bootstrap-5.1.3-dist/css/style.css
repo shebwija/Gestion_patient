@@ -1,0 +1,53 @@
+.b_heig{
+    height: 60vh;
+}
+.b_btn{
+    justify-content: end;
+    text-align: end;
+    align-items: flex-end;
+}
+.back{
+    background-image: url('image/patient4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: block;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(3, 245, 233) 0 50%, 100%);
+}
+.b_im{
+    height: 45vh;
+}
+.b_foot a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+.b_nav a{
+    font-weight: bold;
+    margin-right: 15px;
+}
+.b_nav{
+    text-align: justify;
+    justify-content: center;
+    font-size: large;
+}
+.b_clinique{
+    font-weight: bold;
+}
+.b_clin{
+    background-image: url('../../Images/image_resize_013.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    background: linear-gradient (.25turn, red, 10%, blue);
+}
+.b_link{
+    text-decoration: none;
+}
+.b_clin2{
+    background-image: url('../../Images/u129.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+

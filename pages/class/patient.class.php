@@ -2,16 +2,16 @@
 
 class Patient
 {
-  private $id;
+  private $idpatient;
   private $nom;
   private $prenom;
   private $sexe;
-  private $adresse;
   private $telephone;
+  private $adresse;
   private $age;
   private $groupeSanguin;
-  private $antecedent;
   private $maladie;
+  private $antecedent;
 
   public function __construct(array $donnee){
 
@@ -27,7 +27,7 @@ class Patient
 
   // les getters
 
-    public function getId()
+    public function getIdpatient()
     {
         return $this->idpatient;
     }
@@ -42,7 +42,7 @@ class Patient
         return $this->prenom;
     }
 
-    public function getGenre()
+    public function getSexe()
     {
         return $this->sexe;
     }
@@ -52,7 +52,7 @@ class Patient
         return $this->telephone;
     }
 
-    public function getAddresse()
+    public function getAdresse()
     {
         return $this->adresse;
     }
@@ -66,22 +66,21 @@ class Patient
     {
         return $this->groupeSanguin;
     }
+    public function getMaladie()
+    {
+        return $this->maladie;
+    }
 
     public function getAntecedent()
     {
         return $this->antecedent;
     }
 
-    public function getmaladie()
-    {
-        return $this->maladie;
-    }
-
     // les setters
 
     public function setIdpatient($idpatient)
     {
-        $this->id = $idpatient;
+        $this->idpatient = $idpatient;
     }
 
     public function setNom($nom)
@@ -94,14 +93,9 @@ class Patient
         $this->prenom = $prenom;
     }
 
-    public function setGenre($sexe)
+    public function setSexe($sexe)
     {
         $this->sexe = $sexe;
-    }
-
-    public function setAdresse($adresse)
-    {
-        $this->adresse = $adresse;
     }
 
     public function setTelephone($telephone)
@@ -109,24 +103,29 @@ class Patient
         $this->telephone = $telephone;
     }
 
+    public function setAdresse($adresse)
+    {
+        $this->adresse = $adresse;
+    }
+
     public function setAge($age)
     {
         $this->age = $age;
     }
 
-    public function setG_sanguin($groupeSanguin)
+    public function setGroupeSanguin($groupeSanguin)
     {
         $this->groupeSanguin = $groupeSanguin;
+    }
+
+    public function setMaladie($maladie)
+    {
+        $this->maladie = $maladie;
     }
 
     public function setAntecedent($antecedent)
     {
         $this->antecedent = $antecedent;
-    }
-
-    public function setmaladie($maladie)
-    {
-        $this->maladie = $maladie;
     }
 }
 

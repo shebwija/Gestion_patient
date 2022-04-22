@@ -1,0 +1,30 @@
+.nic_bg{
+    background-image: url('image/bgimg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: block;
+    width: 100%;
+}
+
+.nic_bg1{
+    background-image: url('image/bgimg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: block;
+    width: 100%;
+}
+
+.nic_detail
+{
+
+width: 95%;
+border: 1px solid green;
+margin-left: 2em;
+border-radius: 1em;
+background-color: white;
+margin-top: 1em;
+
+
+}

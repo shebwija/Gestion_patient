@@ -5,7 +5,7 @@ require_once "connection.php";
 if(isset($_REQUEST['delete_id']))
 {
 	// selectionner la donnée de la base de donnée à supprimer 
-	$code=$_REQUEST['delete_id'];	//obtenir delete_id et le deposer dans $id variable
+	$idpatient=$_REQUEST['delete_id'];	//obtenir delete_id et le deposer dans $id variable
 		
 	$select_stmt= $db->prepare('SELECT * FROM Patient WHERE idpatient =:idpatient');
 	$select_stmt->bindParam(':idpatient',$idpatient);
@@ -17,7 +17,7 @@ if(isset($_REQUEST['delete_id']))
 	$delete_stmt->bindParam(':idpatient',$idpatient);
 	$delete_stmt->execute();
 		
-	header("Location:liste_patient.php");
+	header("Location:liste_pat.php");
 }
 	
 ?>
@@ -27,36 +27,34 @@ if(isset($_REQUEST['delete_id']))
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <?php include 'style_page.php';?>
+    <title>Liste</title>
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <?php include 'style.php';?>
 </head>
 <body>
-<?php include 'menu_page.php';?>  
-      <h1 style="font-family: Algerian; text-align: center;">LISTE DES PATIENTS</h1>
+<?php include 'menu_page.php';?>
+<div class="nic_bg ">
+<h1 style="font-family: Algerian; text-align: center;">LISTE DES PATIENTS</h1>
 	
-
+	<div class="wrapper">
 	
 	<div class="container">
 			
 		<div class="col-lg-12">
 			<div class="col-lg-12">
-                   
+                        <!-- /.panel-heading -->
                         <div class="panel-body imprimable">
                             <div class="table-responsive">
-                                <table id="myTable" class="table table-striped table-bordered table-hover ">
-                                    <thead class="bg-warning">
+                                <table id="myTable" class="table table-striped table-bordered table-hover" style="background-color: white;">
+                                    <thead>
                                         <tr>
-                                            <th>ID</th>
                                             <th>NOM</th>
-										                      	<th>PRENOM</th>
+											<th>PRENOM</th>
                                             <th>SEXE</th>
-                                            <th>AGE</th>
                                             <th>TELEPHONE</th>
                                             <th>ADRESSE</th>
-                                            <th>GROUPE SANGUIN</th>
-                                            <th>MALADIE ACTUELLE</th>
-                                            <th>ANTECEDENT MEDICAL</th>
-                                            <th>DETAIL</th>
+                                            <th>DETAILS</th>
                                             <th>MODIFIER</th>
                                             <th>SUPPRIMER</th>
                                         </tr>
@@ -69,19 +67,14 @@ if(isset($_REQUEST['delete_id']))
 									{
 									?>
                                         <tr>
-                                            <td><?php echo $row['idpatient']; ?></td>
                                             <td><?php echo $row['nom']; ?></td>
 											<td><?php echo $row['prenom']; ?></td>
                                             <td><?php echo $row['sexe']; ?></td>
-                                            <td><?php echo $row['age']; ?></td>
                                             <td><?php echo $row['telephone']; ?></td>
                                             <td><?php echo $row['adresse']; ?></td>
-                                            <td><?php echo $row['groupeSanguin']; ?></td>
-                                            <td><?php echo $row['maladie']; ?></td>
-                                            <td><?php echo $row['antecedent']; ?></td>
-                                            <td><a href="modifier.php?update_id=<?php echo $row['idpatient']; ?>" class="btn "> <img src="../image/user.jpg"  alt=""> </a></td>
-                                            <td><a href="modifier.php?update_id=<?php echo $row['idpatient']; ?>" class="btn "> <img src="../image/edit.jpg"  alt=""> </a></td>
-                                            <td><a href="supprimer.php?id=<?php echo $row['idpatient']; ?>" class="btn " onclick='return confirm("Etes-vous sûr de vouloir supprimer?")'>  <img src="../image/Close.jpg"  alt=""> </a></td>
+                                            <td><a href="detail_patient.php?idpatient=<?php echo $row['idpatient']; ?>" class="btn "> <img src="../image/user.jpg"  alt=""> </a></td>
+                                            <td><a href="edit.php?update_id=<?php echo $row['idpatient']; ?>" class="btn "> <img src="../image/edit.jpg"  alt=""> </a></td>
+                                            <td><a href="?delete_id=<?php echo $row['idpatient']; ?>" class="btn " onclick='return confirm("Etes-vous sûr de vouloir supprimer?")'>  <img src="../image/Close.jpg"  alt=""> </a></td>
                                         </tr>
                                     <?php
 									}
@@ -92,12 +85,12 @@ if(isset($_REQUEST['delete_id']))
                             <!-- /.table-responsive -->
                         </div>
                         <!-- /.panel-body -->
-                </div>
 				
 		</div>
 		
 	</div>
 			
+	</div>
     <div class="container">
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
   <a href="imprimable.php">
@@ -106,8 +99,12 @@ if(isset($_REQUEST['delete_id']))
     </div>
     </div>
     <br>
-      <?php include 'footer.php';?>
-      <?php include 'js.php';?>	
+</div>
+      <?php include 'pied.php';?>
+      <?php include 'script.php';?>
+      <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+      <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+      <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
       
 <script>
 function myFunction() {

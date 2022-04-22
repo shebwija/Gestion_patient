@@ -1,0 +1,207 @@
+.nic_menu {
+    display: flex;
+}   
+.nic_menu_droit {
+    display: flex;
+}
+.nic_menu a {
+    display: block;
+    min-width: 100px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Impact;
+    margin-left: 25px;
+}
+.nic_deroulant {
+    list-style:none;
+    color:#FFF;
+    padding: 0px;
+    font-size:20px;
+    text-decoration:none;
+    }
+.nic_ligne2 {
+    list-style:none;
+    color:#FFF;
+    padding: 8px;
+    font-size:20px;
+    text-decoration:none;
+    }
+.nic_menu, .nic_sous_menu {
+    background-color: rgb(9, 9, 153);
+    padding: 15px;
+    margin:0;
+    }
+.nic_ligne1, .nic_deroulant, .nic_ligne2 {
+    list-style: none;
+    line-height:5px;
+    float:left;
+    background-color: rgb(9, 9, 153);
+    }
+.nic_a {
+    color:#FFF;
+    padding: 8px;
+    font-size:20px;
+    text-decoration:none;
+    }
+.nic_a:hover {
+    color: black;
+    }
+.nic_sous_menu { 
+        display:none;
+        list-style: none;
+     } 
+.nic_ligne1:hover ul, .nic_deroulant:hover ul { 
+    z-index:99999;
+    display:list-item;
+    position:absolute;
+    margin-left: 0px;
+    }
+.nic_ligne1:hover ul li, .nic_deroulant:hover ul li {
+    float:none;
+    }
+.nic_a:hover {
+        background-color: white;
+        } 
+.nic_urgence2 {
+    height: 65vh;
+}
+.nic_urgence3 {
+    height: 65vh;
+}
+.bgnic{
+    background-image: url(../../Images/u41.png);
+}
+.nic_urgence4{
+    background-image: url('../../Images/urgencenic01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+    background: linear-gradient (.25turn, red, 10%, blue);
+}
+.nic_urgence5{
+    text-decoration: none;
+}
+.nic_urgence6{
+    background-image: url('../../Images/bgurgence.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+.nic_urgence8{
+    background-color: white;
+}
+.nic_urgence9{
+    height: 52vh;
+}
+.nic_urgence10{
+    background-image: url('../../Images/rdv1.jpg');
+    background-repeat: no-repeat;
+}
+.nic_actus{
+    background-image: url('../../Images/salleop7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background: linear-gradient (.25turn, red, 10%, blue);
+}
+.nic_actus2{
+    background-image: url('../../Images/actus0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 118vh;
+    margin-bottom: 580px;
+}
+.nic_actus6{
+    background-image: url('../../Images/rdv1.jpg');
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.nic_galerie0{
+    background-image: url('../../Images/galerie00.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+    background: linear-gradient (.25turn, red, 10%, blue);
+}
+.nic_faq0{
+    background-image: url('../../Images/bgtetefaq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    background: linear-gradient (.25turn, red, 10%, blue);
+}
+.nic_psite0{
+    background-image: url('../../Images/h3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 52vh;
+    background: linear-gradient (.25turn, red, 10%, blue);
+}
+.nic_recru0{
+    background-image: url('../../Images/hp3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 52vh;
+    background: linear-gradient (.25turn, red, 10%, blue);
+}
+.nic_local0{
+    background-image: url('../../Images/lohospi2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 52vh;
+    background: linear-gradient (.25turn, red, 10%, blue);
+}
+.nic_faq3{
+    background-image: url('../../Images/bgbodyfaq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background: linear-gradient (.25turn, red, 10%, blue);
+}
+.nic_pc0{
+    background-image: url('../../Images/bgpc2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+    background: linear-gradient (.25turn, red, 10%, blue);
+}
+.nic_pc01{
+    background-image: url('../../Images/bgpc3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    background: linear-gradient (.25turn, red, 10%, blue);
+}
+.nic_pc3{
+    background-image: url('../../Images/bgbodyfaq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+    background: linear-gradient (.25turn, red, 10%, blue);
+}
+.nic_pc2{
+    text-decoration: none;  
+}
+.gallery .gallery-item {
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+  }
+  .gallery .gallery-item img {
+    transition: all ease-in-out 0.4s;
+  }
+  .gallery .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  .nic_cont{
+    background-image: url('../../Images/salleop5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background: linear-gradient (.25turn, red, 10%, blue);
+  }
+a :hover{
+    color: red;
+    background-color: white;
+}
