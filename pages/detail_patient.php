@@ -51,7 +51,7 @@ if(isset($_GET['idpatient']))
 </div>   
 <br> 
 <div class='button'>
-<a href="liste_pat.php"> <button class="btn btn-outline-danger" id="btn-ajout" style="background-color: white; margin-left: 20px;"> Retour </button></a>
+<a href="liste_pat.php"> <button class="btn btn-outline-danger" id="btn-ajout" style="background-color: danger; margin-left: 20px;"> Retour </button></a>
 </div>
 <br>
 </div>

@@ -50,7 +50,7 @@ if(isset($_REQUEST['delete_id']))
                                     <thead>
                                         <tr>
                                             <th>NOM</th>
-											<th>PRENOM</th>
+										                      	<th>PRENOM</th>
                                             <th>SEXE</th>
                                             <th>TELEPHONE</th>
                                             <th>ADRESSE</th>
@@ -68,7 +68,7 @@ if(isset($_REQUEST['delete_id']))
 									?>
                                         <tr>
                                             <td><?php echo $row['nom']; ?></td>
-											<td><?php echo $row['prenom']; ?></td>
+										                      	<td><?php echo $row['prenom']; ?></td>
                                             <td><?php echo $row['sexe']; ?></td>
                                             <td><?php echo $row['telephone']; ?></td>
                                             <td><?php echo $row['adresse']; ?></td>
@@ -94,7 +94,7 @@ if(isset($_REQUEST['delete_id']))
     <div class="container">
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
   <a href="imprimable.php">
-  <button class="btn btn-primary me-md-2" type="button">Imprimer</button>
+  <button class="btn btn-outline-primary me-md-2" type="button">Imprimer</button>
   </a>
     </div>
     </div>

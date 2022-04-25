@@ -27,7 +27,7 @@
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" id="myInput" onkeyup="myFunction()" type="search" aria-label="Search">
-              <button class="btn btn-outline-light" style="background-color: rgb(74, 15, 236);" type="submit">Recherche</button>
+              <button class="btn btn-outline-primary" type="submit">Recherche</button>
             </form>
           </div>
         </div>

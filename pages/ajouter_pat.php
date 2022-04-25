@@ -199,7 +199,7 @@ if(isset($_REQUEST['btn_insert']))
 
 				<div class="col-sm-offset-3 col-sm-9 m-t-15">
 					<!-- Button trigger modal -->
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
 Ajouter
 </button>
 
@@ -221,7 +221,7 @@ Ajouter
     </div>
   </div>
 </div>
-		<a href="liste_pat.php" class="btn btn-dark">Supprimer</a>
+		<a href="liste_pat.php" class="btn btn-outline-primary">Supprimer</a>
 		</div>
 			</form>
 			
