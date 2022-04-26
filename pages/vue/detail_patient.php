@@ -1,6 +1,6 @@
 <?php
-require_once 'base.php';
-require_once 'autoload.php';
+require_once './fonctions/base.php';
+require_once './fonctions/autoload.php';
 
 $bd=bd();
 $Patient_ctrl =new PatientController($bd);
@@ -16,18 +16,12 @@ if(isset($_GET['idpatient']))
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
         <title>Detail patient</title>
-        <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../style.css">
-        <?php include 'style.php';?>
+        <?php include '../style/style.php';?>
     </head>
     <body>
 
-    <?php include 'menu_page.php';?> 
+    <?php include 'menu_footer/menu_page.php';?> 
     <div class="nic_bg ">
     <br>
     <div style="text-align: center;">
@@ -55,8 +49,8 @@ if(isset($_GET['idpatient']))
 </div>
 <br>
 </div>
-<?php include 'pied.php';?>
-<?php include 'script.php';?>
+<?php include 'menu_footer/pied.php';?>
+<?php include '../style/script.php';?>
     </body>
 </html>
 

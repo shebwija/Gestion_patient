@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="pages/style.css">
-    <?php include 'pages/style.php';?>
+    <?php include 'style/style.php';?>
 </head>
 <body>
-<?php include 'pages/menu.php';?>
+<?php include 'pages/menu_footer/menu.php';?>
 
 <div class="col md-12 d-flex " >
     <div class="col md-6">
@@ -47,11 +42,7 @@
     </div>
 </div> <br>
 
-      <?php include 'pages/pied.php';?>
-      <?php include 'pages/script.php';?>
-<script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
-<script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-<script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>   
-      
+      <?php include 'pages/menu_footer/pied.php';?>
+      <?php include 'style/script.php';?>   
 </body>
 </html>

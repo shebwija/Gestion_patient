@@ -1,6 +1,6 @@
 <?php
 
-require_once "connection.php";
+require_once "./fonctions/connection.php";
 	
 if(isset($_REQUEST['delete_id']))
 {
@@ -24,16 +24,11 @@ if(isset($_REQUEST['delete_id']))
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste</title>
-    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../style.css">
-    <?php include 'style.php';?>
+    <?php include '../style/style.php';?>
 </head>
 <body>
-<?php include 'menu_page.php';?>
+<?php include 'menu_footer/menu_page.php';?>
 <div class="nic_bg  ">
 <h1 style="font-family: Algerian; text-align: center;">LISTE DES PATIENTS</h1>
 	
@@ -94,14 +89,14 @@ if(isset($_REQUEST['delete_id']))
     <div class="container">
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
   <a href="imprimable.php">
-  <button class="btn btn-outline-primary me-md-2" type="button">Imprimer</button>
+  <button class="btn btn-outline-primary me-md-2" type="button">Imprimer la liste</button>
   </a>
     </div>
     </div>
     <br>
 </div>
-      <?php include 'pied.php';?>
-      <?php include 'script.php';?>
+      <?php include 'menu_footer/pied.php';?>
+      <?php include '../style/script.php';?>
       
 <script>
 function myFunction() {
