@@ -34,12 +34,12 @@ if(isset($_REQUEST['delete_id']))
 </head>
 <body>
 <?php include 'menu_page.php';?>
-<div class="nic_bg ">
+<div class="nic_bg  ">
 <h1 style="font-family: Algerian; text-align: center;">LISTE DES PATIENTS</h1>
 	
-	<div class="wrapper">
+	<div class="wrapper ">
 	
-	<div class="container">
+	<div class="container ">
 			
 		<div class="col-lg-12">
 			<div class="col-lg-12">
@@ -48,7 +48,7 @@ if(isset($_REQUEST['delete_id']))
                             <div class="table-responsive">
                                 <table id="myTable" class="table table-striped table-bordered table-hover" style="background-color: white;">
                                     <thead>
-                                        <tr>
+                                        <tr class="bg-warning">
                                             <th>NOM</th>
 										                      	<th>PRENOM</th>
                                             <th>SEXE</th>

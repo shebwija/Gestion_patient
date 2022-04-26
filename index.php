@@ -41,7 +41,7 @@
   </button>
 </div>
     </div>
-    <div class="col md-6 bg-warning"> <br> <br>
+    <div class="col md-6"> <br> <br>
       <h1 style="font-family: Lucida Calligraphy ; text-align: center; color: red; font-size: 4em;">Bienvenu à la gestion des patients</h1>
       <h3 style="font-family: Times New Roman; text-align: center;">Amour, acceuil, hospitalité</h3>
     </div>
