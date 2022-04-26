@@ -56,8 +56,5 @@ require_once "connection.php";
                             <!-- /.table-responsive -->
                         </div>
                         <?php include 'script.php';?>
-                        <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
-                        <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-                        <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
                         </body>
 </html>

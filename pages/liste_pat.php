@@ -102,9 +102,6 @@ if(isset($_REQUEST['delete_id']))
 </div>
       <?php include 'pied.php';?>
       <?php include 'script.php';?>
-      <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
-      <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-      <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
       
 <script>
 function myFunction() {
